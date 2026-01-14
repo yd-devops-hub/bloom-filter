@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloom Filter Visualizer</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Bloom Filter Visualizer</h1>
-        <div class="controls">
-            <div class="input-group">
-                <input type="text" id="add-input" placeholder="Enter item to add">
-                <button id="add-button">Add</button>
-            </div>
-            <div class="input-group">
-                <input type="text" id="check-input" placeholder="Enter item to check">
-                <button id="check-button">Check</button>
-            </div>
+      <h1>Bloom Filter Visualizer</h1>
+      <div class="controls">
+        <div class="input-group">
+          <input type="text" id="add-input" placeholder="Enter item to add" />
+          <button id="add-button">Add</button>
         </div>
-        <div class="visualization">
-            <h2>Bloom Filter (Bit Array)</h2>
-            <div id="bit-array" class="bit-array"></div>
+        <div class="input-group">
+          <input
+            type="text"
+            id="check-input"
+            placeholder="Enter item to check"
+          />
+          <button id="check-button">Check</button>
         </div>
-        <div id="explanation-container" class="explanation-container">
-            <h2>Explanation</h2>
-            <ul id="explanation-steps"></ul>
-        </div>
-        <div class="reference-container">
-            <p>To learn more, read the article: <a href="https://medium.com/@yashraj45dighe/the-bloom-filter-explained-simply-5ac5edeffb1e" target="_blank" rel="noopener noreferrer">The Bloom Filter, Explained Simply</a></p>
-        </div>
+      </div>
+      <div class="visualization">
+        <h2>Bloom Filter (Bit Array)</h2>
+        <div id="bit-array" class="bit-array"></div>
+      </div>
+      <div id="explanation-container" class="explanation-container">
+        <h2>Explanation</h2>
+        <ul id="explanation-steps"></ul>
+      </div>
+      <div class="reference-container">
+        <p>
+          To learn more, read the article:
+          <a
+            href="https://medium.com/@yashraj45dighe/the-bloom-filter-explained-simply-5ac5edeffb1e"
+            target="_blank"
+            rel="noopener noreferrer"
+            >The Bloom Filter, Explained Simply</a
+          >
+        </p>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
